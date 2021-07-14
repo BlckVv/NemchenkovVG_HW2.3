@@ -68,8 +68,8 @@ class GradientView: UIView {
     private func setupGradient() {
         self.layer.addSublayer(gradientLayer)
         setupGradientColors()
-        gradientLayer.startPoint = Point.leading.point
-        gradientLayer.endPoint = Point.trailing.point
+        gradientLayer.startPoint = Point.top.point
+        gradientLayer.endPoint = Point.bottom.point
         
     }
     
