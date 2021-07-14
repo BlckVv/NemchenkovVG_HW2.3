@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bC0-bk-y50">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="NemchenkovVG_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rii-4S-Wqk">
-                                <rect key="frame" x="54" y="361" width="306" height="174"/>
+                                <rect key="frame" x="0.0" y="244" width="375" height="173"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CXW-rb-S8j">
-                                        <rect key="frame" x="53" y="0.0" width="200" height="88"/>
+                                        <rect key="frame" x="87.5" y="0.0" width="200" height="88"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kb0-c9-v9R">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
@@ -35,10 +35,11 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="JfB-Wx-DxV"/>
+                                            <constraint firstAttribute="height" constant="88" id="Wjp-gd-zyv"/>
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3J-Ca-8dT">
-                                        <rect key="frame" x="126" y="98" width="54" height="36"/>
+                                        <rect key="frame" x="160.5" y="98" width="54" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
@@ -46,7 +47,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="V9f-l1-K0F">
-                                        <rect key="frame" x="0.0" y="144" width="306" height="30"/>
+                                        <rect key="frame" x="34.5" y="143" width="306" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYN-v5-Emv">
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
@@ -70,8 +71,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Rii-4S-Wqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ohc-QL-gmT"/>
-                            <constraint firstItem="Rii-4S-Wqk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SVa-A9-H5B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Rii-4S-Wqk" secondAttribute="bottom" constant="250" id="OTt-VY-qaj"/>
+                            <constraint firstItem="Rii-4S-Wqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PKr-Yv-05T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rii-4S-Wqk" secondAttribute="trailing" id="aqS-E7-1Ed"/>
+                            <constraint firstItem="Rii-4S-Wqk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="ck2-si-tzV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hello!" id="6fG-1p-9vE"/>
@@ -91,12 +94,12 @@
         <scene sceneID="KdQ-Pm-ZRi">
             <objects>
                 <viewController id="VEz-H9-JxA" customClass="WelcomeViewController" customModule="NemchenkovVG_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cef-92-6Or" customClass="GradientView" customModule="NemchenkovVG_HW2_3" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                    <view key="view" contentMode="scaleToFill" id="cef-92-6Or">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="SHL-sa-ssS">
-                                <rect key="frame" x="156" y="310" width="102" height="222"/>
+                                <rect key="frame" x="136.5" y="212.5" width="102" height="222"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNa-yX-9Bi">
                                         <rect key="frame" x="0.5" y="0.0" width="101" height="30"/>
@@ -151,7 +154,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bC0-bk-y50" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="G0X-yV-SUy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

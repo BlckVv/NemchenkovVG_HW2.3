@@ -1,6 +1,6 @@
 import UIKit
 
-class GradientView: UIView {
+@IBDesignable class GradientView: UIView {
     
     enum Point {
         case topLeading
