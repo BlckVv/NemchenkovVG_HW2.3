@@ -91,7 +91,7 @@
         <scene sceneID="KdQ-Pm-ZRi">
             <objects>
                 <viewController id="VEz-H9-JxA" customClass="WelcomeViewController" customModule="NemchenkovVG_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cef-92-6Or">
+                    <view key="view" contentMode="scaleToFill" id="cef-92-6Or" customClass="GradientView" customModule="NemchenkovVG_HW2_3" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -127,6 +127,14 @@
                             <constraint firstItem="SHL-sa-ssS" firstAttribute="centerY" secondItem="cef-92-6Or" secondAttribute="centerY" id="K1a-QZ-Kki"/>
                             <constraint firstItem="SHL-sa-ssS" firstAttribute="centerX" secondItem="cef-92-6Or" secondAttribute="centerX" id="cVv-ML-zQE"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" systemColor="systemBlueColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" systemColor="systemPinkColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="welcomeLabel" destination="iNa-yX-9Bi" id="BeN-ih-aqD"/>
@@ -159,6 +167,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

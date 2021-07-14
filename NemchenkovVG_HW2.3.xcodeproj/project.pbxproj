@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E603DC1B269F78D400BBFC0A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603DC1A269F78D400BBFC0A /* GradientView.swift */; };
 		E6307BF6269E17CD00D9693E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6307BF5269E17CD00D9693E /* AppDelegate.swift */; };
 		E6307BF8269E17CD00D9693E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6307BF7269E17CD00D9693E /* SceneDelegate.swift */; };
 		E6307BFA269E17CD00D9693E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6307BF9269E17CD00D9693E /* LoginViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E603DC1A269F78D400BBFC0A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E6307BF2269E17CD00D9693E /* NemchenkovVG_HW2.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NemchenkovVG_HW2.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6307BF5269E17CD00D9693E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6307BF7269E17CD00D9693E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				E6307BF7269E17CD00D9693E /* SceneDelegate.swift */,
 				E6307BF9269E17CD00D9693E /* LoginViewController.swift */,
 				E6508E64269E218000AF1CB3 /* WelcomeViewController.swift */,
+				E603DC1A269F78D400BBFC0A /* GradientView.swift */,
 				E6307BFB269E17CD00D9693E /* Main.storyboard */,
 				E6307BFE269E17D000D9693E /* Assets.xcassets */,
 				E6307C00269E17D000D9693E /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				E6307BFA269E17CD00D9693E /* LoginViewController.swift in Sources */,
 				E6508E65269E218000AF1CB3 /* WelcomeViewController.swift in Sources */,
 				E6307BF6269E17CD00D9693E /* AppDelegate.swift in Sources */,
+				E603DC1B269F78D400BBFC0A /* GradientView.swift in Sources */,
 				E6307BF8269E17CD00D9693E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

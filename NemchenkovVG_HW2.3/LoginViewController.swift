@@ -7,8 +7,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController, UITextFieldDelegate {
+    
     
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
@@ -20,8 +20,16 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        if let touch =  touches.first {
+            if userNameTF.isFirstResponder && touch.view != userNameTF {
+                userNameTF.resignFirstResponder();
+            }
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }

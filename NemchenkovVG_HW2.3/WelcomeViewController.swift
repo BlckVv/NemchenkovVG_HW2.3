@@ -8,13 +8,13 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
-    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    @IBOutlet private weak var welcomeLabel: UILabel!
     
     var welcomeUserText: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = welcomeUserText
-}
+    }
 }
